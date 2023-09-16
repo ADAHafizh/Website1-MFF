@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Archivo:400,600,900);
+
+:root
+{
+    --text-primary: #0B0805;
+    --background-primary: #FDFDFB;
+    --color-primary: #F49911;
+    --color-secondary: #EBE1D1;
+    --color-accent: #486EA8;
+}
+
+*
+{
+    font-family: 'Open Sans', sans-serif;
+}
+body
+{
+    background-color: #EBE1D1;
+}
+body h1
+{
+    font-family: 'Archivo', sans-serif;
+    font-weight: 900;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.mask {
+    background: linear-gradient(45deg, hsla(169, 84.5%, 52%, 0), hsla(263, 87.7%, 44.7%, 0) 100%);
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #e37361;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, rgba(227,115,97,1), rgba(235,225,209,1%));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, rgba(227,115,97,1), rgba(235,225,209,1))
+}
+
+.flat-color {
+    background: #EBE1D1;
+}
+/*Navbar Customization*/
+.nav-link
+{
+    font-weight: 700;
+}
+/*Animated Arrow*/
+* {
+    box-sizing: border-box;
+}
+.container-circle {
+    height: 120px;
+    width: 120px;
+    margin: 0px auto 0;
+    position: relative;
+}
+.circle {
+    background-color: rgba(0,0,0,0.1);
+    height: 120px;
+    width: 120px;
+    display: block;
+    border: 5px solid #ffffff;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    animation-name:circle;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    -webkit-animation-name:circle;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+}
+.fa {
+    font-size: 42px;
+    color: #ffffff;
+    bottom: 27px;
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    animation-name:arrow;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    -webkit-animation-name:arrow;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+}
+.pulse {
+    margin: 0 auto;
+    border-radius: 100px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 0;
+    background-color: transparent;
+    opacity: 0;
+    width: 110px;
+    height: 110px;
+    border: 10px solid #00baff;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px;
+    /* Giving Animation Function */
+    -webkit-animation: pulse 1s linear infinite 0.3s;
+    -moz-animation: pulse 1s linear infinite 0.3s;
+    border-image: initial;
+}
+@keyframes arrow
+{
+    0%   {bottom:0;}
+    75% {bottom:90px;}
+    100% {bottom:0;}
+}
+@-webkit-keyframes arrow
+{
+    0%   {bottom:0;}
+    75% {bottom:90px;}
+    100% {bottom:0;}
+}
+@keyframes circle
+{
+    0%   {height:120px;}
+    10% {height: 120px;}
+    50% {height: 130px;}
+    75% {height: 150px;}
+    90% {height: 130px;}
+    100% {height: 120px;}
+}
+@-webkit-keyframes circle
+{
+    0%   {height:120px;}
+    10% {height: 120px;}
+    50% {height: 130px;}
+    75% {height: 150px;}
+    90% {height: 130px;}
+    100% {height: 120px;}
+}
+@-webkit-keyframes pulse {
+    0% {-webkit-transform: scale(0); opacity: 0;}
+    8% {-webkit-transform: scale(0); opacity: 0;}
+    15% {-webkit-transform: scale(0.1); opacity: 1;}
+    30% {-webkit-transform: scale(0.5); opacity: 1;}
+    100% {opacity: 0; -webkit-transform: scale(1.5);}
+}
+@-moz-keyframes pulse {
+    0% {-webkit-transform: scale(0); opacity: 0;}
+    8% {-webkit-transform: scale(0); opacity: 0;}
+    15% {-webkit-transform: scale(0.1); opacity: 1;}
+    30% {-webkit-transform: scale(0.5); opacity: 1;}
+    100% {opacity: 0; -webkit-transform: scale(1.5);}
+}
+
+/*Curvy Waves cause we like it*/
+.custom-shape-divider-bottom-1694838060 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1694838060 svg {
+    position: relative;
+    display: block;
+    width: calc(111% + 1.3px);
+    height: 139px;
+}
+
+.custom-shape-divider-bottom-1694838060 .shape-fill {
+    fill: #F49911;
+}
