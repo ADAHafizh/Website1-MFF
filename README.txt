@@ -1,8 +1,3 @@
-MDB5
-Version: FREE 6.4.1
+Website for NYUAD Fall 2023 Communications Lab class.
 
-Documentation:
-https://mdbootstrap.com/docs/standard/
-
-Contact:
-office@mdbootstrap.com
+For more information, please refer to the documentation .pdf
