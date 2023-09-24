@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Flex:400);
 @import url(https://fonts.googleapis.com/css?family=Archivo:400,600,900);
 
 :root
@@ -10,18 +10,21 @@
     --color-accent: #486EA8;
 }
 
-*
-{
-    font-family: 'Open Sans', sans-serif;
-}
 body
 {
     background-color: #EBE1D1;
 }
+
 body h1
 {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo', sans-serif !important;
     font-weight: 900;
+}
+
+*
+{
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 300;
 }
 html {
     scroll-behavior: smooth;
@@ -44,6 +47,33 @@ html {
 
 .flat-color {
     background: #EBE1D1;
+}
+
+/* Hourglass Animation */
+#hourglass:hover
+{
+    transform: rotate(100deg);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 /*Navbar Customization*/
 .nav-link
@@ -193,4 +223,21 @@ html {
 
 .custom-shape-divider-bottom-1694838060 .shape-fill {
     fill: #F49911;
+}
+
+/* IMAGE TRACK */
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+    width: 35vmin;
+    height: 46vmin;
+    object-fit: cover;
+    object-position: bottom;
 }

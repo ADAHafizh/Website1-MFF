@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css">
-    <title>WEBSITE_DRAFT_MDB</title>
+    <link rel="icon" type="image/svg" href="img/web-icon.svg"/>
+    <title>timewalk.</title>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -25,7 +26,7 @@
       <div name="navbar">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-link bg-warning fixed-top rounded-pill shadow-3-strong"
-             style="z-index: 10000; min-height: 58.59px; left: 25%; right: 25%;">
+             style="z-index: 10000; min-height: 58.59px; left: 40%; right: 40%;">
           <!-- Container wrapper -->
           <div class="container-fluid">
 
@@ -37,18 +38,18 @@
             </button>
 
             <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0">
 
                 <!-- Link -->
                 <li class="nav-item mx-3">
-                  <a class="nav-link fw-bolder fs-6" href="#">Lore</a>
+                  <a class="nav-link fw-bold fs-6" href="#lore">Lore</a>
                 </li>
                 <li class="nav-item mx-3">
-                  <a class="nav-link fw-bolder fs-6" href="#">30MFF</a>
+                  <a class="nav-link fw-bold fs-6" href="#30mff">30MFF</a>
                 </li>
                 <li class="nav-item mx-3">
-                  <a class="nav-link fw-bolder fs-6" href="#">Profile</a>
+                  <a class="nav-link fw-bold fs-6" href="#gallery">Gallery</a>
                 </li>
               </ul>
             </div>
@@ -60,12 +61,14 @@
           <div class="mask"> <!--check gradient in .css file -->
             <div class="container d-flex justify-content-center align-items-center h-100">
               <div class="text-dark text-center">
-                <h1 class="display-1 mb-3 fw-bolder">TIMEWALKING</h1>
+                <h1 class="display-1 mb-3 fw-bold">TIMEWALKING</h1>
                 <h4 class="">Journey together with me into the sands of time!</h4>
                 <div class="container-circle position-static align-bottom">
-                  <span class="circle">
-                    <i class="fa fa-arrow-down"></i>
+                  <a href="#lore">
+                    <span class="circle">
+                    <i class="fa fa-arrow-down" href="#lore"></i>
                   </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -78,58 +81,58 @@
       <div class="container-fluid gradient-custom">
         <div class="container pt-5 vh-100 d-flex flex-column justify-content-evenly">
           <div class="text-dark">
-            <h1 class="text-start">Lore</h1>
+            <h1 id="lore" class="text-start">Lore</h1>
             <h4> Timewalking is reliving the past using a magical hourglass. As the sands within the Hourglass
             are inverted, a palpable surge of arcane energy envelops the user, transporting them through the
             veil of time. The world around them shifts and transforms, unveiling an astonishing tableau of a bygone era.
             They become silent observers, unseen and untouched by the events they witness.</h4>
+            <hr class="hr hr-blurry" />
           </div>
-          <a class="ripple ripple-surface-unbound align-self-center" href="#!" data-mdb-ripple-color="#bc37e1" data-mdb-ripple-duration="1000ms" data-mdb-ripple-centered="false" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="200" style="">
-            <img class="img-fluid" src="img/3dhourglass.svg" alt="logo" style="height: 500px; width: 500px;">
+          <a class="ripple ripple-surface-unbound align-self-center" href="javascript:setTimeout(()=>{window.location = '#30mff' },1000);" data-mdb-ripple-color="#bc37e1" data-mdb-ripple-duration="1000ms" data-mdb-ripple-centered="false" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="200" style="">
+            <img id="hourglass" class="img-fluid" src="img/3dhourglass.svg" alt="logo" style="height: 500px; width: 500px;">
           </a>
-          <h3 class="text-center">Click the hour glass to begin Timewalking.</h3>
+          <h5 class="text-center">Click the hour glass to begin Timewalking.</h5>
         </div>
       </div>
-      
-      <!-- HEADING AND VIDEO -->
+
       <div class="container-fluid flat-color">
+        <div class="container vh-20 d-flex flex-column justify-content-around">
+      </div>
+      <!-- 30MFF -->
+      <div class="container-fluid flat-color mt-5">
         <div class="container pt-5 vh-100 d-flex flex-column justify-content-around">
           <div class="text-dark">
-            <h1 class="mt-3 mb-3">30MFF</h1>
+            <h1 id="30mff" class="mt-3 mb-3">30MFF</h1>
             <h4 class="mb-3">30 Minute Film Festival was a project for Interactive Media Communications Lab class in Fall 2023.
               This video represents as a trip down the memory lane of all the places (most) that I would visit during my college life.  </h4>
+            <hr class="hr hr-blurry" />
           </div>
-          <div class="ratio ratio-16x9">
+
+          <div id="video" class="ratio ratio-16x9 p-5">
             <video controls="true" class="embed-responsive-item" src="MFFDraft_AhmadHafizh.mp4" allowfullscreen></video>
           </div>
         </div>
       </div>
 
-      <!-- HEADING AND MODALS GALLERY -->
-      <div class="container-fluid flat-color">
-        <div class="container pt-5 vh-100 d-flex flex-column justify-content-evenly">
+      <!-- PICTURE GALLERY -->
+      <div class="container-fluid flat-color pt-5" style="overflow: hidden;">
+        <div class="container pt-5 vh-100 d-flex flex-column justify-content-between">
           <div class="text-dark">
-            <h1 class="mt-3 mb-3">Gallery</h1>
+            <h1 id="gallery" class="mt-3 mb-3">Gallery</h1>
             <h4 class="mb-3">Some documentations that I have made are posted here. The journey was spectacular, but everything must come to an end.</h4>
+            <hr class="hr hr-blurry" />
           </div>
-          <div class="row gx-3 justify-content-center">
-            <div class="col-lg-4 col-md-12">
-              <div class="bg-image ratio ratio-1x1 hover-zoom">
-                <img src="img/gallery/20221104_062527.jpg" class="w-100" />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="bg-image ratio ratio-1x1 hover-zoom">
-                <img src="img/gallery/20230909_095318.jpg" class="w-100" />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="bg-image ratio ratio-1x1 hover-zoom">
-                <img src="img/gallery/20220823_124508.jpg" class="w-100" />
-              </div>
-            </div>
+          <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <img class="image hover-zoom" src="img/gallery/20220823_124508.jpg" draggable="false" />
+            <img class="image hover-zoom" src="img/gallery/20220827_105700.jpg" draggable="false" />
+            <img class="image hover-zoom" src="img/gallery/20221104_062527.jpg" draggable="false" />
+            <img class="image hover-zoom" src="img/gallery/20230906_071021.jpg" draggable="false" />
+            <img class="image hover-zoom" src="img/gallery/20230909_095318.jpg" draggable="false" />
+            <img class="image hover-zoom" src="img/gallery/20221120_173618%20(1).jpg" draggable="false" />
           </div>
         </div>
+        <h4 class="align-self-center"> Ahmad Dahlan Hafizh (adh10023) </h4>
+      </div>
         <div class="custom-shape-divider-bottom-1694838060">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -144,6 +147,6 @@
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
